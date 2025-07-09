@@ -153,6 +153,82 @@ form .Usuario{
     margin: 10px 0;
 }
 
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 6; }
+    .div2 { grid-area: 2 / 1 / 3 / 6; }
+    .div3 { grid-area: 3 / 1 / 4 / 6; }
+    .div4 { grid-area: 4 / 1 / 7 / 6; }
+
+    
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-bottom: #222 1px solid;
+}
+
+.iconos-header {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 20px;
+    font-weight: 500;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    font-weight: 600;
+    color: #222;
+}
+
+.iconos-header img {
+    width: 29px;
+    height: 29px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.iconos-derecha {
+    margin-left: auto;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+}
+
+.div2 h1,p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.div3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 30px;
+    width: 100%;
+    border: 1px solid black;
+}
+
 
 /* Animación para el texto */
 @keyframes aparecer {
