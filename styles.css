@@ -252,7 +252,6 @@ form .Usuario{
     grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr 0.1fr;
     align-items: center;
     padding: 5px 30px;
-    /* border-bottom: 1px solid #ccc; */
 }
 
 .filas {
@@ -442,6 +441,134 @@ form .Usuario{
     border-radius: 1rem;
 }
 
+@media (max-width: 991px) {
+    .formulario,
+    .wrapper,
+    .formulario-usuario {
+    width: 90%;
+    padding: 20px;
+}
+
+.tabla-header,
+.filas {
+    grid-template-columns: repeat(10, 1fr);
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.boton,
+.button-final {
+    text-align: center;
+    width: 60%;
+}
+
+.wrapper .datos input {
+    width: 95%;
+}
+
+.iconos-header,
+.iconos-derecha {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+}
+
+@media (max-width: 600px) {
+.formulario,
+.wrapper,
+.formulario-usuario {
+    width: 95%;
+    padding: 15px;
+}
+
+.iconos-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.iconos-header img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 4px;
+}
+
+.text {
+    display: none;
+}
+
+#icon-kairo {
+    display: none;
+}
+
+.tabla {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.header {
+    flex-wrap: wrap;
+    flex-direction: row ;
+    font-size: 14px;
+    padding: 10px;
+    height: 25vh;
+    justify-content:center;
+}
+
+.iconos-derecha a {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.tabla-header,
+.filas {
+    display: block;
+    text-align: left;
+    padding: 10px;
+
+}
+
+.filas {
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.Usuario input,
+.Contraseña input,
+.wrapper .datos input {
+    width: 100%;
+}
+
+.boton,
+.button-final {
+    width: 80%;
+    font-size: 14px;
+    text-align: center;
+}
+
+.header {
+    font-size: 14px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.iconos-header,
+.iconos-derecha {
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenido-banner {
+    width: 90%;
+}
+}
+
 /* Animación para el texto */
 @keyframes aparecer {
     to {
@@ -457,4 +584,4 @@ form .Usuario{
     to {
         opacity: 1;
     }
-    }
+}
