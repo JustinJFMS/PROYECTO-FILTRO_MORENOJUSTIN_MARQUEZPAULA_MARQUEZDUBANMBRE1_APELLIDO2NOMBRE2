@@ -166,15 +166,13 @@ form .Usuario{
     .div3 { grid-area: 3 / 1 / 4 / 6; }
     .div4 { grid-area: 4 / 1 / 7 / 6; }
 
-    
-
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
     text-align: center;
-    padding: 20px 20px;
+    padding: 5px 20px;
     font-size: 16px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border-bottom: #222 1px solid;
@@ -202,6 +200,7 @@ form .Usuario{
     margin-right: 8px;
 }
 
+
 .iconos-derecha {
     margin-left: auto;
     display: flex;
@@ -210,30 +209,171 @@ form .Usuario{
     gap: 20px;
 }
 
-.div2 h1,p {
+.iconos-derecha:last-child {
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+
+.div2 p {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.div3{
+.div2 h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tabla{
+    width: 95%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.tabla-header {
+    font-weight: bold;
+}
+
+.tabla-header,
+.filas {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr 0.1fr;
+    align-items: center;
+    padding: 5px 30px;
+    /* border-bottom: 1px solid #ccc; */
+}
+
+.filas {
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    color: #666;
+    border-radius: 20px;
+    margin: 10px 0;
+    background-color: #fff;
+}
+
+.filas item {
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.button-final {
+    background-color: #ff6600;
+    color: black;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    width: 200px;
+    text-decoration: none;
+}
+
+.menu{
+    cursor: pointer;
+    color: #222;
+    text-decoration: solid black 3px;
+}
+
+.progreso {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1px 30px;
+    margin: 0 auto;
+}
+
+.filas .progreso.rojo {
+    border: 5px solid #ff0000;
+    border-radius: 100%;
+}
+
+.filas .progreso.naranja {
+    border: 5px solid #ff6600;
+    border-radius: 100%;
+}
+
+.filas .progreso.verde {
+    border: 5px solid #00ff00;
+    border-radius: 100%;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    background: white;
+    border-radius: 30px;
+    animation: mover 3s ease;
+    padding: 20px;
+}
+
+.wrapper h2  {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.wrapper .datos input {
+    padding: 20px;
+    border: 1.5px solid #ccc;
+    border-radius: 20px;
+    margin: 10px;
+    margin-right: 10px;
+    width: 97%;
+    justify-content: center;
+    align-items: center;
+}
+
+.cajita{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.perfil1 {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    border: 1px solid black;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.perfil1:target {
+    display: flex;
 }
 
 
 /* Animación para el texto */
 @keyframes aparecer {
     to {
-    opacity: 1;
+        opacity: 1;
     transform: scale(1);
     }
 }
