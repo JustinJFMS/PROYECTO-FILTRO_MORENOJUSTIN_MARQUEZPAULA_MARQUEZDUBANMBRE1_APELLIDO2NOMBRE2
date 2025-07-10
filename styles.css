@@ -78,7 +78,6 @@ form .Usuario{
     width: 80%;
     display: block;
     margin: 0 auto;
-
 }
 
 .Usuario label,
@@ -368,7 +367,6 @@ form .Usuario{
 .perfil1:target {
     display: flex;
 }
-
 
 /* Animación para el texto */
 @keyframes aparecer {
